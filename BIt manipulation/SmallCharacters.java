@@ -11,7 +11,8 @@ public class SmallCharacters {
             flag=flag | (1<<(c-'a'));
         }
 
-        if(flag==(1<<(26)-1)){
+        int all = (1<<26)-1;
+        if(flag==all){
             System.out.print("Valid String");
         }else{
             System.out.print("Invalid");
