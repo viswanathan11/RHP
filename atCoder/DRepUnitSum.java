@@ -5,7 +5,7 @@ package atCoder;
  */
 
 import java.util.*;
-import java.util.*;
+
 
 public class DRepUnitSum {
 
