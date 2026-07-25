@@ -8,9 +8,7 @@ public class DisjointSet {
 
         return ldr[node];
     }
-
     static void join(int[] ldr,int lt,int rt){
-
         int leader1=find(ldr,lt);
         int leader2=find(ldr,rt);
 
@@ -33,12 +31,13 @@ public class DisjointSet {
     }
 
     HashSet<Integer> set=new HashSet<>();
+    //Ultimate leaders
     for(int i=1;i<=n;i++){
         set.add(find(ldr,i));
     }
 
     System.out.println(set);
     System.out.println("Number of connected components = " + set.size());
-
+    sc.close();
     }
 }

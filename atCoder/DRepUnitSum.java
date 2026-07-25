@@ -62,5 +62,7 @@ public class DRepUnitSum {
         }
 
         System.out.println(sb.reverse());
+        sc.close();
+
     }
 }

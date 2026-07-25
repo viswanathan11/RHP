@@ -61,6 +61,7 @@ public class Main {
       int wb=upperBound(xi,ri);
       
       System.out.println(prefix_sum[wb+1]-prefix_sum[lb-1]);
+      sc.close();
     }
     }
 }

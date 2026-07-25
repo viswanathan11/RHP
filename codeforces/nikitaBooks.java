@@ -29,6 +29,7 @@ public class nikitaBooks {
             }
 
             System.out.println(okay?"YES":"NO");
+            sc.close();
         }
     }
 }

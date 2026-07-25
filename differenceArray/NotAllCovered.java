@@ -31,6 +31,7 @@ public class NotAllCovered {
         }
 
         System.out.println(res);
+        sc.close();
     }
     
 }

@@ -49,6 +49,7 @@ public class staticRangeSum {
 
             System.out.println(prefix_sum[end]-prefix_sum[st-1]);
         }
+        sc.close();
 
     }
 }
