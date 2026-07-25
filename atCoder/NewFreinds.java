@@ -39,7 +39,7 @@ public class NewFreinds {
         int[] leaders=new int[N+1];
         int[] groupCount=new int[N+1];
         int[] edgeCount=new int[N+1];
-        int[][] relation=new int[N][2];
+        int[][] relation=new int[R][2];
         for(int i=1;i<=N;i++)leaders[i]=i;
 
         for(int i=0;i<R;i++){
@@ -54,21 +54,21 @@ public class NewFreinds {
             groupCount[find(leaders,i)]++;
         }
 
-        for(int i=0;i<N;i++){
+        for(int i=0;i<R;i++){
             edgeCount[find(leaders,relation[i][0])]++;
         }
 
-        int count=0;
-        int t1=0;
+        long count=0;
+        long t1=0;
         for(int i=1;i<=N;i++){
-            if(groupCount[i]!=0 && edgeCount[i]!=0){
-            t1=(int)getCombinationCount(groupCount[i],2);
+            if(groupCount[i]!=0){
+            t1=getCombinationCount(groupCount[i],2);
             count+=t1-edgeCount[i];
             }
         }
 
 
         System.out.println(count);
-
+        sc.close();
     }
 }
