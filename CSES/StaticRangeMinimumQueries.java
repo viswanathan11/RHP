@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class StaticRangeMinimumQueries {
-    static int find(int[] seg,int node,int nl,int nr,int ql,int qr){
-        
-    }
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         
     }
     //BRUTE FORCE
