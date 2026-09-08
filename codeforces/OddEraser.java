@@ -4,7 +4,7 @@ public class OddEraser{
     static Scanner sc=new Scanner(System.in);
 
     public static int gcd(int a,int b){
-        return b==0?a:gcd(b,b%a);
+        return b==0?a:gcd(b,a%b);
     }
     public static void solve(){
         int n=sc.nextInt();
